@@ -9,7 +9,7 @@ app.get("/", function(request, response){
 });
 
 app.post('/score', function(request, response){
-    
+
 });
 
 var server = app.listen(8080, function() {
