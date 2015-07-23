@@ -28,46 +28,56 @@
             </p>
         </div>
 
-
-
-        <div id="greeting">
-            <h3>GAME OVER</h3>
-            <h3>Save your score</h3>
-            <form id="greeting-form" class="form-inline">
-                <div class="form-group">
-
-                    <label for="fullName">What's your name?</label>
-                    <input type="text" id="fullName" class="form-control"
-                           name="fullName" placeholder="Bob">
-
-                    <label for="email">What's your email?</label>
-                    <input type="email" id="email" class="form-control"
-                           name="email" placeholder="bob@email.com">
-
-                    <input type="hidden" id="score" name="score" value="0">
-
-
-                </div>
-                <button class="btn btn-default" type="submit">OK</button>
-                <h1></h1>
-                <h1></h1>
-                <center><a href="http://localhost:63342/webapp-flappy/pages/index.html?fullName=&email=&score=0">CLICK HERE TO SKIP</a></center>
-            </form>
-        </div>
-
-        <div class="col-sx-4">
-            <p>The highest scorers are:</p>
-            <ul>
-                <li class="gold">Me</li>
-                <li class="score">Myself</li>
-                <li class="score">I</li>
-            </ul>
-           <!--<img src="../assets/unmute.png"/>-->
-        </div>
-    </div>
+        <!--<div class="col-sx-4">-->
+            <!--<p>S:</p>-->
+            <!--<ul>-->
+                <!--<li class="gold">Me</li>-->
+                <!--<li class="score">Myself</li>-->
+                <!--<li class="score">I</li>-->
+            <!--</ul>-->
+           <!--&lt;!&ndash;<img src="../assets/unmute.png"/>&ndash;&gt;-->
+        <!--</div>-->
+    <!--</div>-->
     <!--<button class="toggle player here" type="submit">Mute</button>-->
 
+    <div id="greeting">
+        <h3>GAME OVER</h3>
+        <h3></h3>
+
+        <h3>Your Score: <span id="scorePlace"></span></h3>
+        <h3></h3>
+        <p></p>
+        <form id="greeting-form" class="form-inline">
+            <div class="form-group">
+
+                <!--<label for="fullName">What's your name?</label>-->
+                <!--<input type="text" id="fullName" class="form-control"-->
+                <!--name="fullName" placeholder="Bob">-->
+
+                <!--<label for="email">What's your email?</label>-->
+                <!--<input type="email" id="email" class="form-control"-->
+                <!--name="email" placeholder="bob@email.com">-->
+
+                <!--<input type="hidden" id="score" name="score" value="0">-->
+
+
+            </div>
+            <button class="btn btn-default" type="submit">OK</button>
+            <h1></h1>
+            <h1></h1>
+            <!--<center><a href="http://localhost:63342/webapp-flappy/pages/index.html?fullName=&email=&score=0">Continue</a></center>-->
+        </form>
+    </div>
+
+
+
 </div>
+
+
+
+
+
+
 <center><div id="game" id="game1"> </div></center>
 <script src="../lib/jquery.js"></script>
 <script type="text/javascript" src="../lib/phaser.min.js"></script>

@@ -7,7 +7,7 @@ var stateActions = { preload: preload, create: create, update: update };
 // - renderer (go for Phaser.AUTO)
 // - element where the game will be drawn ('game')
 // - actions on the game state (or null for nothing)
-var game = new Phaser.Game(1280, 400, Phaser.AUTO, 'game', stateActions);
+var game = new Phaser.Game(1250, 400, Phaser.AUTO, 'game', stateActions);
 
 /*
  * Loads all resources for the game and gives them names.
@@ -301,9 +301,10 @@ function generate() {
 
 
 function gameOver() {
-    score = 0;
     game.destroy();
     music.stop();
+    $("#scorePlace").html(score);
     $("#greeting").show();
     gameGravity = 200;
+    score = 0;
 }
