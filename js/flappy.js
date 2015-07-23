@@ -213,7 +213,7 @@ function generatePipe() {
     // generate the pipes, except where the gap should be
     for (var count=0; count<8; count++) {
         if (count < gap || count >= gap+3) {
-            addPipeBlock(1200, count*50);
+            addPipeBlock(1250, count*50);
         }
     }
 
